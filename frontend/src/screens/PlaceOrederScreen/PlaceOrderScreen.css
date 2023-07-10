@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;600&family=Poppins:wght@700&family=Roboto:wght@100;400&family=Urbanist:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+  --primary-color: #415e6b;
+  --primary-green: #5c6a4d;
+  --light-green: #999b84;
+  --primary-black: black;
+  --text-color: #75464a;
+  --hover-color: #909d9d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+
+.place-order-container {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 5rem;
+  margin-top: 10rem;
+}
+
+
+.place-order-title {
+  font-size: 2.5rem;
+  text-align: center;
+
+  margin-top: 2rem;
+  font-family: 'Outfit';
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-weight: 600;
+  letter-spacing: 0.5rem;
+  animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3s; /* don't forget to set a duration! */
+}
+.place-order-card-title {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  font-family: 'Poppins';
+}
+.order-place-label {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  font-family: 'Poppins';
+}
+.place-order-value {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  font-weight: 100;
+  font-family: 'Poppins';
+}
+.order-place-edit {
+  width: 200px;
+  height: 100px;
+  background-color: var(--primary-color);
+  font-size: 1.2rem;
+  font-family: 'Poppins';
+  color: white;
+  padding: 0.5rem 3rem;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+}
+.order-place-edit:hover {
+  background-color: var(--hover-color);
+  color: var(--primary-color);
+}
+
+.list-group-flush {
+  margin-bottom: 0.4rem;
+}
+.place-order-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 0.4rem;
+  border: 1px solid white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.8rem;
+  color: white;
+  font-weight: 650;
+
+  transition: background-color 0.3s ease;
+margin-top: 1rem;
+  background-color: #ffc727;
+  text-transform: capitalize;
+
+}
+
+.place-order-btn:hover{
+  color: white;
+  background-color: var(--hover-color);
+
+}
+
+@media only screen and (max-width: 600px) {
+  .place-order-title {
+    font-size: 2rem;
+  }
+  .place-order-card {
+    width: 90vw;
+  }
+  .place-order-row {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1224px) {
+  .place-order-row {
+    width: 100vw;
+  }
+}

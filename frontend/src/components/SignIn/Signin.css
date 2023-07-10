@@ -1,0 +1,223 @@
+:root {
+  --primary-color: #415e6b;
+  --primary-green: #5c6a4d;
+  --light-green: #999b84;
+  --primary-black: black;
+  --text-color: #75464a;
+  --hover-color: #909d9d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+
+.signIn-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/*sign in styels */
+
+.sign-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+  width: 100%;
+  max-height: 100%;
+}
+
+.form__wrapper {
+  width: 500px;
+
+  padding: 3rem;
+  padding-top: 6rem;
+  border-radius: 3rem;
+  background-color: white;
+
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 20px var(--primary-color);
+  margin: 4rem;
+}
+.login_Img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -50px;
+}
+.login_Img img {
+  width: 100%;
+  height: 300px;
+}
+.label__input__wrraper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.label__input__wrraper label {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.label__input__wrraper input {
+  width: 100%;
+  height: 45px;
+  outline: none;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border: 1px solid #e1e1de;
+  color: rgb(106, 71, 5);
+  border-radius: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.form__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form__button input {
+  outline: none;
+  width: 80%;
+  height: 3rem;
+  border-radius: 0.4rem;
+  border: 1px solid white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.8rem;
+}
+.sign-in-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 0.4rem;
+  border: 1px solid white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.8rem;
+  color: white;
+  font-weight: 650;
+
+  transition: background-color 0.3s ease;
+  margin-bottom: 1rem;
+  background-color: #ffc727;
+  text-transform: capitalize;
+}
+.sign-in-btn:hover {
+  color: white;
+  background-color: var(--hover-color);
+}
+
+.Dont-p {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+.c-link {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #ffc727;
+}
+
+.sign-in-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+@media only screen and (max-width: 747px) {
+  .sign-in {
+    margin-top: 2rem;
+  }
+  .login_Img img {
+    width: 300px;
+    height: 250px;
+    padding: 0.5rem;
+    margin-top: -55px;
+  }
+  .form__wrapper {
+    padding: 0rem;
+    width: 300px;
+    height: 600px;
+    padding-top: 6rem;
+  }
+  .label__input__wrraper {
+    width: 70%;
+    margin-bottom: 0;
+  }
+
+  .label__input__wrraper label {
+    font-size: 0.9rem;
+  }
+
+  .label__input__wrraper input {
+    font-size: 1rem;
+    height: 40px;
+  }
+  .sign-in-btn {
+    width: 6rem;
+    height: 2.5rem;
+    font-size: 1rem;
+  }
+  .social div {
+    height: 1.3rem;
+    width: 9rem;
+    font-size: 1.2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .Dont-p {
+    font-size: 0.7rem;
+  }
+  .c-link {
+    font-size: 0.7rem;
+  }
+  .form__button {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .sign-in {
+    margin-top: 2rem;
+  }
+  .login_Img img {
+    width: 250px;
+    height: 250px;
+    padding: 0.5rem;
+    margin-top: -55px;
+  }
+  .form__wrapper {
+    width: 250px;
+    height: 600px;
+  }
+}
+/*end of sign in*/

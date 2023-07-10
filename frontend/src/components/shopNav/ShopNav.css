@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;600&family=Poppins:wght@700&family=Roboto:wght@100;400&family=Urbanist:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+  --primary-color: hsl(199, 24%, 34%);
+  --primary-green: #5c6a4d;
+  --light-green: #999b84;
+  --primary-black: black;
+  --text-color: #75464a;
+  --hover-color: #909d9d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+
+.shop-navbar {
+  display: flex;
+
+  align-items: center;
+
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100vw;
+
+  background-color: var(--primary-color);
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.shop-navbar-brand {
+  width: 70px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: -10px;
+}
+.shop-nav-logo img {
+  width: 120px;
+  height: 70px;
+}
+.shop-navbar-brand h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
+
+.shop-navbar-toggler {
+  display: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin-left: 10px;
+}
+
+.shop-navbar-toggler-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 20 20%22%3E%3Cpath fill=%22%23fff%22 d=%22M0 4h20v2H0V4zm0 5h20v2H0V9zm0 5h20v2H0v-2z%22/%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #fff;
+}
+
+.shop-navbar-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop-navbar-menu ul {
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.2rem;
+}
+
+.shop-navbar-menu li {
+  margin: 0;
+  padding: 0 10px;
+}
+
+.shop-navbar-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-family: 'Outfit';
+  letter-spacing: 0.2rem;
+}
+.shop-navbar-menu a:hover {
+  color: var(--hover-color);
+}
+
+.shop-logo img {
+  width: 50px;
+  height: 100%;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+.search-box {
+  margin-top: 0.5rem;
+}
+.dropdown-menu {
+
+  background-color: var(--primary-color);
+}
+
+.dropdown {
+  margin-top: 0.3rem;
+}
+.dropdown-item.active{
+  background-color:white;
+  color: var(--primary-color)
+}
+.dropdown-menu.focus{
+ background-color:var(--primary-color);
+  color: white;
+}
+.dropdown-item.focus{
+  background-color:var(--primary-color);
+   color: white;
+ }
+ .nav-link:focus{
+  color: white;
+ }
+@media (max-width: 768px) {
+  .shop-navbar {
+    height: 40px;
+    justify-content: center;
+    padding: 2rem 0rem;
+  }
+  .shop-navbar-brand {
+    margin-right: auto;
+
+    margin-top: -20px;
+  }
+
+  .shop-navbar-toggler {
+    display: block;
+
+    display: block;
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+  }
+  .shop-logo img {
+    width: 50px;
+    height: 50px;
+    margin-left: 2rem;
+  }
+  .shop-navbar-menu {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: var(--primary-color);
+
+    width: 60%;
+    height: calc(100vh - 60px);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .shop-navbar-menu.show {
+    transform: translateX(0);
+  }
+
+  .shop-navbar-menu ul {
+    max-height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .shop-navbar-menu li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+  }
+  .shop-navbar-menu a {
+    color: #fff;
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 320px){
+  .shop-navbar-toggler {
+    right: 1rem;
+  } 
+}

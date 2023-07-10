@@ -1,0 +1,9 @@
+body{
+    overflow-x: hidden;
+}
+
+.pro-container{
+    width: 100vw;
+    overflow-x: hidden;
+
+}

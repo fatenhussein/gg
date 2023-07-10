@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;600&family=Poppins:wght@700&family=Roboto:wght@100;400&family=Urbanist:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+  --primary-color: hsl(199, 24%, 34%);
+  --primary-green: #5c6a4d;
+  --light-green: #999b84;
+  --primary-black: black;
+  --text-color: #75464a;
+  --hover-color: #909d9d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+
+.oreder-history-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 5rem 0rem;
+}
+.order-history-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 6rem;
+  font-family: 'Outfit';
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-weight: 600;
+  letter-spacing: 0.5rem;
+  animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3s; /* don't forget to set a duration! */
+  word-wrap: break-word;
+}
+.table {
+  width: 40vw;
+  margin-top: 2rem;
+  overflow: hidden;
+}
+
+
+.order-history-label {
+  color: var(--primary-color);
+  font-size: 0.8rem;
+  font-family: 'Poppins';
+}
+
+.order-history-value {
+  color: var(--primary-color);
+  font-size: 0.8rem;
+  font-weight: 100;
+  font-family: 'Poppins';
+}
+
+.details-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+
+  border-radius: 0.4rem;
+  border: 1px solid white;
+  cursor: pointer;
+  padding: 0.8rem;
+  color: white;
+  font-weight: 650;
+
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+  background-color: #ffc727;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+}
+.details-btn:hover {
+  color: white;
+  background-color: var(--hover-color);
+}
+@media only screen and (max-width: 748px) {
+  .order-history-title {
+    font-size: 1.4rem;
+  }
+  .order-history-label {
+    font-size: 0.4rem;
+  }
+  .order-history-value {
+    font-size: 0.4rem;
+  }
+  .details-btn {
+    font-size: 0.4rem;
+    padding: .4rem;
+  }
+}
+/*fold*/
+@media only screen and (max-width: 320px) {
+  .order-history-title {
+    font-size: 1rem;
+  }
+  .order-history-label {
+    font-size: 0.3rem;
+  }
+  .order-history-value {
+    font-size: 0.3rem;
+  }
+  .details-btn {
+    font-size: 0.3rem;
+    padding: .4rem;
+  }
+
+
+}

@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;600&family=Poppins:wght@700&family=Roboto:wght@100;400&family=Urbanist:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+  --primary-color: #415e6b;
+  --primary-green: #5c6a4d;
+  --light-green: #999b84;
+  --primary-black: black;
+  --text-color: #75464a;
+  --hover-color: #909d9d;
+  --card-title: #eeb182;
+  --card-desc: #e9ccb8da;
+}
+body {
+  overflow-x: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+
+.serv__container {
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*sevv*/
+.services {
+  background-color: white;
+}
+
+.services__wrapper {
+  width: 100%;
+  height: 100%;
+  margin-top: 4rem;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.services__title  h1{
+  font-size: 3.2rem;
+  text-align: center;
+  margin-bottom: 14rem;
+  margin-top: 6rem;
+  font-family: 'Outfit';
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-weight: 600;
+  letter-spacing: 0.5rem;
+  animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+  animation-duration:3s; /* don't forget to set a duration! */
+}
+
+.cards__wrapper {
+  width: 100vw;
+  gap: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeUp; /* referring directly to the animation's @keyframe declaration */
+  animation-duration:3s; /* don't forget to set a duration! */
+}
+
+.cards__wrapper .card {
+  border: solid var(--light-green) 2px;
+  margin: 8rem;
+  width: 300px;
+  height: 500px;
+  border-radius: 1rem;
+  background-color: var(--primary-color);
+  animation-duration:3s; /* don't forget to set a duration! */
+}
+
+.card__title h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: var(--card-title);
+  font-weight: 700;
+  font-family: 'poppins';
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+}
+.card__desc {
+  text-align: left;
+  margin-bottom: 2rem;
+  color: var(--card-desc);
+  font-size: 1.2rem;
+  font-family: 'Roboto';
+  padding-left: 1rem;
+  padding-right: 1rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+
+.card__img img {
+  width: 300px;
+  height: 500px;
+  object-fit: cover;
+  margin-top: -250px;
+  z-index: 1;
+  margin-left: 50px;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  object-fit: cover;
+}
+/*mobile*/
+
+@media only screen and (max-width: 600px) {
+  .services__title h1 {
+    font-size: 3rem;
+    margin-bottom: 8rem;
+    margin-top: 2rem;
+    
+  }
+  .cards__wrapper {
+    gap: 2rem;
+    flex-direction: column;
+    margin: 0rem 3rem;
+  }
+
+  .cards__wrapper .card {
+    margin-right: 18rem;
+    width: 230px;
+    height: 400px;
+  }
+
+  .card__title {
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  .card__desc {
+    font-size: 0.8rem;
+  }
+  .card__img img {
+    width: 230px;
+    height: 400px;
+  }
+}
+
+/*ipad*/
+@media only screen and (max-width: 1224px) {
+  .services__title {
+    font-size: 3rem;
+    margin-bottom: 8rem;
+    margin-top: 2rem;
+  }
+  .cards__wrapper {
+    gap: 2rem;
+    flex-direction: column;
+    margin: 0rem 3rem;
+  }
+
+  .cards__wrapper .card {
+    margin-right: 18rem;
+    width: 230px;
+    height: 400px;
+  }
+
+  .card__title {
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  .card__desc {
+    font-size: 0.8rem;
+  }
+  .card__img img {
+    width: 230px;
+    height: 400px;
+  }
+}
+/*fold*/
+@media only screen and (max-width: 320px) {
+  .services__title h1{
+    font-size: 2rem;
+    margin-bottom: 8rem;
+    margin-top: 2rem;
+  }
+  .cards__wrapper {
+    gap: 2rem;
+    flex-direction: column;
+    margin: 0rem 3rem;
+  }
+
+  .cards__wrapper .card {
+    margin-right: 18rem;
+    width: 200px;
+    height: 400px;
+  }
+
+  .card__title {
+    margin-bottom: 0.5rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+  }
+  .card__desc {
+    font-size: 0.7rem;
+  }
+  .card__img img {
+    width: 200px;
+    height: 400px;
+  }
+}

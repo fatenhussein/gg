@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;600&family=Poppins:wght@700&family=Roboto:wght@100;400&family=Urbanist:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+  --primary-color: #415e6b;
+  --primary-green: #5c6a4d;
+  --light-green: #999b84;
+  --primary-black: black;
+  --text-color: #75464a;
+  --hover-color: #909d9d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+
+.user-list-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+}
+
+.userList-title {
+  font-size: 2rem;
+  text-align: center;
+
+  margin-top: 2rem;
+  font-family: 'Outfit';
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-weight: 600;
+  letter-spacing: 0.5rem;
+  animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3s; /* don't forget to set a duration! */
+}
+
+thead tr th {
+  color: var(--primary-color);
+  font-size: 1rem;
+  font-family: 'Poppins';
+}
+tbody tr td {
+  color: var(--primary-color);
+  font-size: 0.8rem;
+  font-family: 'Poppins';
+}
+.user-list-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border-radius: 0.4rem;
+  border: 1px solid white;
+  font-size: 0.6rem;
+  cursor: pointer;
+  padding: 0.4rem;
+  color: white;
+  font-weight: 650;
+  width: 4rem;
+  transition: background-color 0.3s ease;
+
+  background-color: #ffc727;
+  text-transform: capitalize;
+}
+
+.user-list-btn:hover {
+  color: white;
+  background-color: var(--hover-color);
+
+}
+
+@media only screen and (max-width: 1224px) {
+  .user-list-container {
+    height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 748px) {
+  .user-list-container {
+    height: unset;
+  }
+
+  thead tr th {
+    font-size: 0.3rem;
+  }
+
+  tbody tr td {
+    font-size: 0.3rem;
+  }
+  .user-list-btn {
+    width: 2rem;
+    font-size: 0.4rem;
+  }
+}
